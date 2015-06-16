@@ -6,7 +6,7 @@
 // A basic route returning a canned response
 Sandbox.define('/test', 'get', function(req, res) {
     // send 'Hello world' response
-    console.log("∩ ∪ ∈ ∀ ∃ ")
+    console.log("test! ")
     
     res.send('Hello world');
 });
