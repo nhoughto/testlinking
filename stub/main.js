@@ -4,7 +4,7 @@ state.dncrPhoneNumbers = state.dncrPhoneNumbers || {};
 state.dncrCredit = state.dncrCredit || 500;
 var MAX_TOKENS = 10;
 var MAX_SAVED_PRICEWATCH_REQS = 20;
-var MAX_SAVED_DNCR_REQS = 5;
+var MAX_SAVED_DNCR_REQS = 6;
 
 
 var scopes = {
