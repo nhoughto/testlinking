@@ -6,7 +6,7 @@
 
 // A basic route returning a canned response
 Sandbox.define('/authed3', 'get', function(req, res){
-    blah += 3
+    blah += 32
     res.send(blah);
 });
 
