@@ -6,7 +6,7 @@
  var route1 = require('./routes/route1');
  
  Sandbox.define('/hello', function(req, res){
-     route1(req, res);
+     route1.something(req, res);
  })
 
 // A basic route returning a canned response
