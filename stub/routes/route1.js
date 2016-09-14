@@ -1,3 +1,5 @@
+var route2 = require('./route2');
+
 exports.something = function(req, res){
-    res.send('12345');
+    route2.deeper('12345');
 }
