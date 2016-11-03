@@ -3,7 +3,7 @@
  * 
  */
  var blah = 1
- var route1 = require('./routes/route1');
+ var route1 = require('./routes/route2');
  
  Sandbox.define('/hello', function(req, res){
      route1.something(req, res);
