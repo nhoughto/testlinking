@@ -10,7 +10,7 @@ Sandbox.define('/hello', function(req, res){
 })
  
 Sandbox.define('/data', 'get', function(req, res){
-    res.send("yes");
+    res.send("no");
 });
 
 // A basic route returning a canned response
