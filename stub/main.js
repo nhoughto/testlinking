@@ -1,13 +1,17 @@
 /**
- * My API Sandbox
- * 
- */
- var blah = 1
- var route1 = require('./routes/route1');
+* My API Sandbox
+* 
+*/
+var blah = 1
+var route1 = require('./routes/route1');
  
- Sandbox.define('/hello', function(req, res){
-     route1.something(req, res);
- })
+Sandbox.define('/hello', function(req, res){
+ route1.something(req, res);
+})
+ 
+Sandbox.define('/data', 'get', function(req, res){
+    res.send("no");
+});
 
 // A basic route returning a canned response
 Sandbox.define('/authed4', 'get', function(req, res){
