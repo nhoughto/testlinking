@@ -10,8 +10,8 @@ Sandbox.define('/hello', function(req, res){
 })
  
 Sandbox.define('/data', 'get', function(req, res){
-    var fullUrl = req.headers['Host'] + req.path;
-    res.send(req.url);
+    var fullUrl = "http://" + req.headers['Host'] + req.path;
+    res.send(fullUrl);
 });
 
 // A basic route returning a canned response
