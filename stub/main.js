@@ -10,7 +10,7 @@ Sandbox.define('/hello', function(req, res){
 })
  
 Sandbox.define('/data', 'get', function(req, res){
-    var fullUrl = "http://" + req.headers['Host'] + req.rawQuery;
+    var fullUrl = "http://" + req.headers['Host'] + req.path;
     res.send("redirect?continue=" + encodeURIComponent(fullUrl));
 });
 
