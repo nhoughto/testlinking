@@ -9,9 +9,10 @@ Sandbox.define('/hello', function(req, res){
  route1.something(req, res);
 })
  
-Sandbox.define('/data', 'get', function(req, res){
+Sandbox.define('/data', 'post', function(req, res){
     var fullUrl = "http://" + req.headers['Host'] + req.path;
-    res.send("redirect?continue=" + encodeURIComponent(fullUrl));
+    res.header('Location', fullUrl);
+    res.send(302, '');
 });
 
 // A basic route returning a canned response
