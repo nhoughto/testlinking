@@ -17,7 +17,7 @@ Sandbox.define('/data', 'post', function(req, res){
 
 // A basic route returning a canned response
 Sandbox.define('/authed4', 'get', function(req, res){
-    blah += 3212
+    res.cookie('blah','1234')
     res.send(blah);
 });
 
