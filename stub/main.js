@@ -17,8 +17,11 @@ Sandbox.define('/data', 'post', function(req, res){
 
 // A basic route returning a canned response
 Sandbox.define('/authed4', 'get', function(req, res){
-    res.cookie('blah','1234')
-    res.send(blah);
+    var result = ""
+    for (var x=0; x< 1000; x++){
+        result += "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+    }
+    res.send(result);
 });
 
 Sandbox.soap('/helloWorldPT/','sayHello', function(req, res){
