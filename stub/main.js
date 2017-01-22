@@ -6,7 +6,7 @@ var blah = 1
 var route1 = require('./routes/route1');
  
 Sandbox.define('/hello', function(req, res){
- res.send('hey')
+ res.send(Sandbox.config.msg)
 })
  
 Sandbox.define('/data', 'post', function(req, res){
