@@ -8,6 +8,10 @@ var route1 = require('./routes/route1');
 Sandbox.define('/hello', function(req, res){
  res.send(Sandbox.config.msg)
 })
+
+Sandbox.define('/hello2', function(req, res){
+ res.send(Sandbox.config.msg)
+})
  
 Sandbox.define('/data', 'post', function(req, res){
     var fullUrl = "http://" + req.headers['Host'] + req.path;
