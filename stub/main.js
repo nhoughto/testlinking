@@ -10,7 +10,7 @@ Sandbox.define('/hello', function(req, res){
 })
 
 Sandbox.define('/hello5', function(req, res){
- res.send(Sandbox.config.msg)
+ res.send(Sandbox.config.msg + "1")
 })
  
 Sandbox.define('/data', 'post', function(req, res){
