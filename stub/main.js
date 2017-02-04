@@ -6,7 +6,7 @@ var blah = 1
 var route1 = require('./routes/route1');
  
 Sandbox.define('/hello', function(req, res){
- res.send(Sandbox.config.msg)
+ res.send(req.query.q)
 })
 
 Sandbox.define('/hello5', function(req, res){
