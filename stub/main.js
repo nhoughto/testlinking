@@ -11,8 +11,7 @@ Sandbox.define('/hello/{q}', function(req, res){
 })
  
 Sandbox.define('/hello', function(req, res){
-    console.log("q: " + req.query.q)
-    res.send(req.query.q)
+    res.render('asdf')
 })
 
 Sandbox.define('/hello5', function(req, res){
