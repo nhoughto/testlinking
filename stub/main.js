@@ -11,7 +11,7 @@ Sandbox.define('/hello/{q}', function(req, res){
 })
  
 Sandbox.define('/hello', function(req, res){
-    res.header('Location', "https://google.com")
+    res.set('Location', "https://google.com")
     res.send(302)
 })
 
