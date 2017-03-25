@@ -13,7 +13,7 @@ Sandbox.define('/hello/{q}', function(req, res){
 })
  
 Sandbox.define('/hello', function(req, res){
-    if(req.query.WSDL){
+    if(req.query.wsdl != undefined){
         res.send("WSDL")
     }else{
     res.set('Location', "https://google.com")
