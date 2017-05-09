@@ -21,8 +21,6 @@ Sandbox.define('/hello', function(req, res){
 })
 
 Sandbox.define('/hello5', function(req, res){
-    res.cookie("a",'1234')
-    res.cookie("b",'12345')
  res.send(Sandbox.config.msg)
 })
  
