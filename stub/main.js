@@ -23,6 +23,10 @@ Sandbox.define('/hello', function(req, res){
 Sandbox.define('/hello5', function(req, res){
  res.send(Sandbox.config.msg)
 })
+
+Sandbox.define('/502', function(req, res){
+ res.send(502, Sandbox.config.msg)
+})
  
 Sandbox.define('/data', 'post', function(req, res){
     var fullUrl = "http://" + req.headers['Host'] + req.path;
