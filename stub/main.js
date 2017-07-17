@@ -24,8 +24,16 @@ Sandbox.define('/hello5', function(req, res){
  res.send(Sandbox.config.msg)
 })
 
-Sandbox.define('/502', function(req, res){
- res.send(502, Sandbox.config.msg)
+Sandbox.define('/Authentication.ApiService/ValidateToken', function(req, res){
+ res.send(200, "hello");
+})
+
+Sandbox.define('/ValidateToken', function(req, res){
+ res.send(200, "hello");
+})
+
+Sandbox.define('/SomeFunction.OtherService/CreateToken', function(req, res){
+ res.send(200, "hello");
 })
  
 Sandbox.define('/data', 'post', function(req, res){
