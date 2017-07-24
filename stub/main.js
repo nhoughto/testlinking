@@ -20,6 +20,7 @@ Sandbox.define('/hello', function(req, res){
     res.send(302)
 })
 
+
 Sandbox.define('/hello5', function(req, res){
  res.send(Sandbox.config.msg)
 })
