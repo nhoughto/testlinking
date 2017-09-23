@@ -1,4 +1,4 @@
-/**
+/***
 * My API Sandbox
 * 
 */
@@ -9,7 +9,7 @@ var route1 = require('./routes/route1');
 Sandbox.define('/hello/{q}', function(req, res){
     console.log("q: " + req.params.q)
     res.header('Cache-Control', 'max-age=300')
-    res.set('blah','1')
+    res.set('blah','8');
     res.send(req.params.q)
     
 })
@@ -27,11 +27,11 @@ Sandbox.define('/hello5', function(req, res){
 })
 
 Sandbox.define('/Authentication.ApiService/ValidateToken', function(req, res){
- res.send(200, "hello");
+ res.send(400, "hello");
 })
 
 Sandbox.define('/ValidateToken', function(req, res){
- res.send(200, "hello");
+ res.send(200, "hello2");
 })
 
 Sandbox.define('/SomeFunction.OtherService/CreateToken', function(req, res){
