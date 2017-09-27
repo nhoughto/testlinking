@@ -9,7 +9,7 @@ var route1 = require('./routes/route1');
 Sandbox.define('/hello/{q}', function(req, res){
     console.log("q: " + req.params.q)
     res.header('Cache-Control', 'max-age=300')
-    res.set('blah','8');
+    res.set('blah','9');
     res.send(req.params.q)
     
 })
