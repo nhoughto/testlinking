@@ -47,7 +47,7 @@ Sandbox.define('/data', 'post', function(req, res){
 
 // A basic route returning a canned response
 Sandbox.define('/authed4', 'get', function(req, res){
-    console.log("test")
+    console.log("1")
     
     var result = ""
     for (var x = 0; x < 15; x++) {
