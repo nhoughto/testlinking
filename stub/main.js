@@ -22,6 +22,10 @@ Sandbox.define('/hello', function(req, res){
     res.send(302)
 })
 
+Sandbox.define('/hello4', function(req, res){
+ res.json({a: 1})
+})
+
 Sandbox.define('/hello5', function(req, res){
  res.send(Sandbox.config.msg)
 })
