@@ -50,7 +50,7 @@ Sandbox.define('/SomeFunction.OtherService/CreateToken', function(req, res){
 Sandbox.define('/data', 'post', function(req, res){
     var fullUrl = "http://" + req.headers['Host'] + req.path;
     
-    res.send('done');
+    res.send(req.body);
 });
 
 // A basic route returning a canned response
