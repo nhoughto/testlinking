@@ -23,12 +23,12 @@ Sandbox.define('/hello', function(req, res){
 })
 
 Sandbox.define('/hello4', function(req, res){
-     if (!req.is('application/json')) {
-
-        return res.send(400, 'Invalid content type, expected application/json');
-
+    var response = "";
+    for (var name in myObject) {
+      response += name + "\n";
     }
- res.json({a: 1})
+     
+    res.send(response);
 })
 
 Sandbox.define('/hello5', function(req, res){
