@@ -24,7 +24,7 @@ Sandbox.define('/hello', function(req, res){
 
 Sandbox.define('/hello4', function(req, res){
     var response = "";
-    for (var name in this) {
+    for (var name in this.global) {
       response += name + "\n";
     }
      
