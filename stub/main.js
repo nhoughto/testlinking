@@ -36,7 +36,7 @@ Sandbox.define('/hello5', function(req, res){
  res.send(Sandbox.config.msg)
 })
 
-Sandbox.define('/*', function(req, res){
+Sandbox.define('/hello5/*', function(req, res){
  res.send("hey")
 })
 
