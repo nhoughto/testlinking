@@ -53,6 +53,7 @@ Sandbox.define('/SomeFunction.OtherService/CreateToken', function(req, res){
 })
  
 Sandbox.define('/data', 'post', function(req, res){
+    console.log("body: " + req.body)
     res.send(200, '');
 });
 
