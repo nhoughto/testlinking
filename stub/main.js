@@ -28,7 +28,7 @@ Sandbox.define('/hello4', function(req, res){
       response += name + "\n";
     }
      
-     
+    res.delay(1000)
     res.send(response);
 })
 
