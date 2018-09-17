@@ -15,7 +15,10 @@ Sandbox.define('/km/btr', function(req, res){
     	"keymaster_bounce_endpoint":"https://km.btr.place/v1/bounce",
     	"windows_proxy_host_and_port":"proxy.ss.npe.aptsc.zone:3128",
     	"jumpbox_host":"jumpbox.btr.place",
-    	"roles": {"developer": { "iam_role_arn": "aws:iam:1234:smth/blahablah", "saml_group_name": "gg_ddc_digitalid_developers", "ssh_extra_usernames":["coreos"] }}
+    	"roles": {
+    	    "developer": { "iam_role_arn": "aws:iam:1234:smth/blahablah", "saml_group_name": "gg_ddc_digitalid_developers", "ssh_extra_usernames":[] },
+    	    "cloudengineer": { "iam_role_arn": "aws:iam:1234:smth/blahablah", "saml_group_name": "gg_ddc_digitalid_developers", "ssh_extra_usernames":["coreos", "ec2-user"] }
+    	}
     }
     res.json(result)
 })
