@@ -6,6 +6,20 @@
 var blah = 17;
 var route1 = require('./routes/route1');
 
+Sandbox.define('/km/btr', function(req, res){
+    var result = {
+    	"name":"km.btr.place",
+    	"saml_sso_endpoint":"https://adfs.npe.aptsc.zone/adfs/ls/",
+    	"saml_issuer":"BtrPlaceKeymaster",
+    	"keymaster_auth_endpoint":"https://km.btr.place/v1/auth",
+    	"keymaster_bounce_endpoint":"https://km.btr.place/v1/bounce",
+    	"windows_proxy_host_and_port":"proxy.ss.npe.aptsc.zone:3128",
+    	"jumpbox_host":"jumpbox.btr.place",
+    	"roles":[{"name":"developer","iam_role_arn": "aws:iam:1234:smth/blahablah", "saml_group_name": "gg_ddc_digitalid_developers", "ssh_extra_usernames":["coreos"] }]
+    }
+    res.json(result)
+})
+
 Sandbox.define('/hello/{q}', function(req, res){
     console.log("q: " + req.params.q)
     res.header('Cache-Control', 'max-age=300')
