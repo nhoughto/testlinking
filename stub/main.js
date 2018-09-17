@@ -8,7 +8,7 @@ var route1 = require('./routes/route1');
 
 Sandbox.define('/km/btr', function(req, res){
     var result = {
-    	"name":"km.btr.place",
+    	"name":"btr.place",
     	"saml_sso_endpoint":"https://adfs.npe.aptsc.zone/adfs/ls/",
     	"saml_issuer":"BtrPlaceKeymaster",
     	"keymaster_auth_endpoint":"https://km.btr.place/v1/auth",
