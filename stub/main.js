@@ -71,11 +71,9 @@ Sandbox.define('/SomeFunction.OtherService/CreateToken', function(req, res){
 })
  
 Sandbox.define('/data', 'post', function(req, res){
-    res.set("Set-Cookie", "AWSALB=b5t5kNsSPSY2M2R1p5MwK5Jz4YmTo3jz5QwXnbkmR4jti3DYDNBKhT/4KVF4Tz8fjaTHv1KlvUrLXq4EmsMp5oZ3QgIVMWoEzSTjPO+9wveXd8//TlWyiwrKGPfv; Expires=Mon, 25 Mar 2019 04:47:12 GMT; Path=/")
-    res.send(200, '');
-});
-
-Sandbox.define('/data2', 'post', function(req, res){
+    if(req.params.q == "1"){
+        res.set("Set-Cookie", "AWSALB=b5t5kNsSPSY2M2R1p5MwK5Jz4YmTo3jz5QwXnbkmR4jti3DYDNBKhT/4KVF4Tz8fjaTHv1KlvUrLXq4EmsMp5oZ3QgIVMWoEzSTjPO+9wveXd8//TlWyiwrKGPfv; Expires=Mon, 25 Mar 2019 04:47:12 GMT; Path=/")
+    }
     res.send(200, '');
 });
 
