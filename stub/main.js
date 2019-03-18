@@ -72,6 +72,7 @@ Sandbox.define('/SomeFunction.OtherService/CreateToken', function(req, res){
  
 Sandbox.define('/data', 'post', function(req, res){
     console.log("body: " + req.body)
+    res.set("Set-Cookie", "AWSALB=blahblahblahblah")
     res.send(200, '');
 });
 
