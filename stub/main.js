@@ -75,6 +75,10 @@ Sandbox.define('/data', 'post', function(req, res){
     res.send(200, '');
 });
 
+Sandbox.define('/data2', 'post', function(req, res){
+    res.send(200, '');
+});
+
 // A basic route returning a canned response
 Sandbox.define('/authed4', 'get', function(req, res){
     console.log("1")
