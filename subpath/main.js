@@ -1,3 +1,3 @@
 Sandbox.define("/hey", function(req,res){
-  res.send('hey');
+  res.send('hey2');
 })
