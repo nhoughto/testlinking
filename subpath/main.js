@@ -4,7 +4,7 @@ Sandbox.define("/hey", function(req,res){
     try {
         assert.equal(req.body, 'body value');
     } catch(e){
-        res.send(400, e.message);
+        return res.send(400, e.message);
     }
     res.send('hey2');
 })
