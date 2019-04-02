@@ -1,6 +1,10 @@
 var assert = require('chai.js').assert;
 
 Sandbox.define("/hey", function(req,res){
-  assert.equal(req.body, 'body value');
-  res.send('hey2');
+    try {
+        assert.equal(req.body, 'body value');
+    } catch(e){
+        res.send(400, e.message);
+    }
+    res.send('hey2');
 })
