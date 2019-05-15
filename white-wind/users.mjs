@@ -1,4 +1,4 @@
-export const createUserHandler = (req, res) => {
+export const createUserHandler = function(req, res) {
     // retrieve users or, if there are none, init to empty array
     state.users = state.users || [];
 
