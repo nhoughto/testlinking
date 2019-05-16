@@ -9,6 +9,7 @@ import { createUserHandler, getUsersHandler, getUserByUsernameHandler } from "us
 Sandbox.define('/hello3', 'get', function(req, res) {
     // send 'Hello world' response
     res.send('Hello world');
+    
 });
 
 // Using stateful behaviour to simulate creating users
