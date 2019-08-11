@@ -6,7 +6,7 @@
 var blah = 17;
 var route1 = require('./routes/route1');
 
-Sandbox.define('/route1', route1.something);
+Sandbox.define('/route1?a=b', route1.something);
 
 Sandbox.define('/km/btr', function(req, res){
     var result = {
