@@ -51,7 +51,7 @@ Sandbox.define('/hello4', function(req, res){
     res.send(response);
 })
 
-Sandbox.define('/hello5', function(req, res){
+Sandbox.define('/hello5', 'post', function(req, res){
  res.send(req.body.lastname)
 })
 
