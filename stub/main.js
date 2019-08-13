@@ -52,7 +52,7 @@ Sandbox.define('/hello4', function(req, res){
 })
 
 Sandbox.define('/hello5', function(req, res){
- res.send(Sandbox.config.msg)
+ res.send(req.body.lastname)
 })
 
 Sandbox.define('/hello5/{a}', function(req, res){
