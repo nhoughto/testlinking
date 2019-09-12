@@ -30,7 +30,6 @@ Sandbox.define('/hello/{q}', function(req, res){
     res.header('Cache-Control', 'max-age=300')
     res.set('blah','10');
     res.send(req.params.q)
-    
 })
  
 Sandbox.define('/hello', function(req, res){
