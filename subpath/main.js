@@ -6,5 +6,5 @@ Sandbox.define("/hey", function(req,res){
     } catch(e){
         return res.json(400, {error:e.message});
     }
-    res.send('success2');
+    res.send('success2 ');
 })
