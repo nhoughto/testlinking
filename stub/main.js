@@ -29,7 +29,7 @@ Sandbox.define('/km/btr', function(req, res){
 Sandbox.define('/hello2/{q}', 'GET', function(req, res){
     console.log("q: " + req.params.q)
     res.header('Cache-Control', 'max-age=300')
-    res.set('blah','111');
+    res.set('blah','10');
     res.send(req.params.q)
 })
  
@@ -60,7 +60,7 @@ Sandbox.define('/hello5/{a}', function(req, res){
 })
 
 Sandbox.define('/Authentication.ApiService/ValidateToken', function(req, res){
- res.send(400, "hello");
+    res.send(400, "hello2");
 })
 
 Sandbox.define('/ValidateToken', function(req, res){
