@@ -8,7 +8,7 @@ import { createUserHandler, getUsersHandler, getUserByUsernameHandler } from "us
 // A basic route returning a canned response
 Sandbox.define('/hello', 'get', function(req, res) {
     // send 'Hello world' response
-    res.send('Hello world2');
+    res.send('Hello world3');
 });
 
 // Using stateful behaviour to simulate creating users
