@@ -10,6 +10,7 @@ var route1 = require('./routes/route1');
 Sandbox.define('/route1', route1.something);
 
 Sandbox.define('/km/btr', function(req, res){
+    a;lsdf
     var result = {
     	"name":"btr.place",
     	"saml_sso_endpoint":"https://adfs.npe.aptsc.zone/adfs/ls/",
