@@ -33,7 +33,7 @@ Sandbox.define('/hello2/{q}', 'GET', function(req, res){
 })
  
 Sandbox.define('/hello', function(req, res){
-    res.status(304);
+    res.status(200);
     res.send('Not modified')
 })
 
