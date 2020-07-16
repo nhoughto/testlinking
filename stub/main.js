@@ -33,11 +33,8 @@ Sandbox.define('/hello2/{q}', 'GET', function(req, res){
 })
  
 Sandbox.define('/hello', function(req, res){
-    if(req.query.wsdl != undefined){
-        return res.render("wsdl")
-    }
-    res.set('Location', "https://google.com")
-    res.send(302)
+    res.status(304);
+    res.send('Not modified')
 })
 
 Sandbox.define('/hello4', function(req, res){
