@@ -47,6 +47,11 @@ Sandbox.define('/hello4', function(req, res){
     res.send(response);
 })
 
+Sandbox.define('/while', function(req, res){
+    while (true) {}
+    res.send('hey');
+})
+
 Sandbox.define('/hello5', 'post', function(req, res){
  res.send(req.body.lastname)
 })
