@@ -25,10 +25,11 @@ Sandbox.define('/km/btr', function(req, res){
     res.json(result)
 })
 
+Sandbox.define('/sp ace/{pathParam}', 'GET', function(req, res){
+    res.send(req.params.pathParam)
+})
+
 Sandbox.define('/hello2/{q}', 'GET', function(req, res){
-    console.log("q: " + req.params.q)
-    res.header('Cache-Control', 'max-age=300')
-    res.set('blah','10');
     res.send(req.params.q)
 })
  
