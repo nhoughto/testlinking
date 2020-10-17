@@ -25,8 +25,8 @@ Sandbox.define('/km/btr', function(req, res){
     res.json(result)
 })
 
-Sandbox.define('/sp%20ace2/', 'GET', function(req, res){
-    res.send(req.params.pathParam)
+Sandbox.define('/space-test/{vals:.*}', 'GET', function(req, res){
+    res.send(req.params.vals)
 })
 
 Sandbox.define('/sp ace/{pathParam}', 'GET', function(req, res){
